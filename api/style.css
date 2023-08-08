@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 95%;
+    width: 95%;
+    background-color: lightcoral;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    
+}
+
+.container .titulo {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 166, 0);
+    text-align: center;
+}
+
+.container .painel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blue;
+    height: 90%;
+    width: 90%;
+}
+
+.container .painel .qrcode,
+.container .painel .painel2 {
+    height: 100%;
+}
+
+.container .painel .qrcode {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: chocolate;
+}
+
+.container .painel .qrcode .cam {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.container .painel .qrcode .cam .border {
+    background-color: green;    
+    width: 50%;
+}
+
+.container .painel .qrcode .cam .btn-group {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    background-color: red;
+    gap: 15px;
+}
+
+.container .painel .qrcode .cam .btn-group .label_conf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container .painel .qrcode .cam .btn-group .label_conf input {
+    display: none;
+}
+
+.container .painel .qrcode .cam .btn-group .label_conf label {
+    cursor: pointer;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 80px;
+    border-radius: 50px;
+}
+
+.container .painel .qrcode .cam input {
+    width: 125px;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.container .painel .painel2 {
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+    overflow: hidden;
+    gap: 20px;
+    padding: 25px 15px;
+    width: auto;
+}
+
+.container .painel .painel2 .tb {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: left;
+    width: 100%;
+    border-collapse: collapse;
+    border: 5px solid #b83030;
+    text-align: center;
+    font-weight: bold;
+    height: 90%;
+    background: aquamarine;
+}
+
+.container .painel .painel2 .tb thead tr {
+    background-color: red;
+}
+
+.container .painel .painel2 .tb thead th {
+    border: 1px solid black;
+    padding: 5px;
+    width: 190px;
+}
+
+.container .painel .painel2 .tb tbody {
+    overflow-x: none;
+    overflow-y: scroll;
+}
+
+.container .painel .painel2 .tb tbody td {
+    background-color: yellow;
+    width: 190px;
+}
+
+.container .painel .painel2 .tb td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+@media (max-width: 910px) {
+
+    .container {
+        overflow-y: auto;
+    }
+
+    .container .titulo {
+        width: 100vh;
+        height: auto;
+        background-color: rgb(255, 166, 0);
+        text-align: center;
+    }
+    
+    .container .painel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        background-color: blue;
+        height: 90%;
+        width: 90%;
+    }
+    
+    .container .painel .qrcode,
+    .container .painel .painel2 {
+        height: 100%;
+    }
+    
+   
+    .container .painel .qrcode .cam .border {
+        background-color: green;    
+        width: 100%;
+    }
+    
+    .container .painel .qrcode .cam form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .painel .qrcode .cam form input {
+        font-size: 1.25rem;
+    }
+
+    .container .painel .qrcode .cam form button {
+        font-size: 1.25rem;
+    }
+
+    .container .painel .qrcode .cam .btn-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        gap: 2px;
+        background-color: red;
+    }
+
+    .container .painel .qrcode .cam .btn-group .label_conf label {
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+        border-radius: 50px;
+        padding: 15px;
+    }
+    
+
+
+}
+
